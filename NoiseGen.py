@@ -27,7 +27,6 @@ def testField():
     generateField(x, y)
     init_world_anchors()
     printField()
-    time.sleep(20)
 
 #Init first achors of world
 '''
@@ -38,13 +37,10 @@ def init_world_anchors():
     for i in range(rows-1):
         for j in range(colums):
             chance = random.randint(1,100)
-            time.sleep(0.01)
             if chance < 11:
                 field[i][j] = 100
             else:
                 field[i][j] = "+"
-            print(chance)
-            print(field[i][j])
 
 #The actual runtime
 testField()
