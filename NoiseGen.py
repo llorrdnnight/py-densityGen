@@ -13,8 +13,8 @@ def generateField(rows_p, colums_p):
     global rows, colums
     rows = rows_p
     colums = colums_p
-    emptyRow = ["-"] * colums
     for x in range(rows-1):
+        emptyRow = ["-"] * colums
         field.append(emptyRow)
 
 def printField():
