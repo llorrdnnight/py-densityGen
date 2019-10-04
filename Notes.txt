@@ -1,0 +1,8 @@
+field[][]
+
+edges can be defined if either
+i or j is minimal or maximum value
+
+When does a hex border
+-when i or j is same and the other differs only by |1|
+-when both i, j only differ by |1| 
