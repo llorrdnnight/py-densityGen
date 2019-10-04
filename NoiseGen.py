@@ -28,7 +28,7 @@ def testField():
     init_world_anchors()
     printField()
 
-#Init first achors of world
+#Init first anchors of world
 '''
     We run over the field, for each position we make a check, if the check applies
 '''
@@ -41,6 +41,13 @@ def init_world_anchors():
                 field[i][j] = 100
             else:
                 field[i][j] = "+"
+#Init nth level promotions
+'''
+    We run over the field locate a world anchor,
+    evaluate the hexes near it and give it a slight chance to promote.
+    A promoted hex will be of a lower evaluate
+    Each promoted hex will then again have a low chance to spawn lesser promotions
+'''
 
 #The actual runtime
 testField()
